@@ -54,8 +54,8 @@ function showInput(){
 
 function showInput2(){
   var username = $('#roundedcorners2').val();
-  var goal_days = $('data1').val();
-  var goal_pounds = $('data2').val();
+  var goal_days = $('#data1').val();
+  var goal_pounds = $('#data2').val();
   
   $.ajax({
     url: "https://SmartScale99.moe-chael.repl.co/postplan/" + username + "/" + goal_days + "/" + goal_pounds,
