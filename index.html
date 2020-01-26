@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Landing Page - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+  <link href="css/mystyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Health Counselor</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+		  
+
+          <!-- <form> -->
+		  <div class="inputFormat">
+			  <div class = "usernamedesign">
+			   <input id="roundedcorners2"placeholder="Username">
+			   
+			   <button id="roundedcorners5"class="button" onclick="showInput()">Go</button>
+			  </div>
+			 
+			  <br>
+			  <br>
+			  <div id="showUpBlock">
+      
+          <input class="roundedcorners4"id="data1" placeholder="Goal Days">
+          <input class="roundedcorners4"id="data2" placeholder="Goal Pounds">
+          
+          <button id="roundedcorners5"class="button" onclick="showInput2()">Confirm</button>
+			  </div>
+			  <div id= "showUpBlock2">
+          <br>
+          </br>
+          <div >
+            <em>Please Step on the Scale</em>
+            <button id="roundedcorners5"class="button" onclick="showInput3()">Done</button>
+          </div>
+          </br>
+          <div id= "showUpBlock3">
+          <input class="roundedcorners"id="data3" placeholder="Days Left">
+          <input class="roundedcorners"id="data4" placeholder="Pounds Left">
+
+          <button id="roundedcorners5"class="button" onclick="hackAccount()">Confirm</button>
+          </div>
+        </br>
+        </br>
+        </div>
+		  </div>
+		  
+
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.roundedcorners {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 225px;
+  height: 35px; 
+  position: relative;
+  left: 6.5%; 
+}
+#roundedcorners2 {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 250px;
+  height: 50px;  
+  position: relative;
+  left: 4.5%;
+}
+#roundedcorners3 {
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+  left: 6.5%;
+}
+#roundedcorners5 {
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+  left: 6.5%;
+}
+.roundedcorners4 {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 225px;
+  height: 35px;  
+  position: relative;
+  left: 6.5%;
+}
+#showUpBlock {
+  display: none;
+}
+#showUpBlock2 {
+  display: none;
+}
+#showUpBlock3 {
+  display: none;
+}
+table, th, td {
+  border: 3px solid white;
+}
+p.thick {
+  font-weight: 1000
+}
+
+</style>
+
+
+            <div class="form-row">
+              <div class="col-12">
+				<table class="table">
+					<tr>
+						<td>
+							<p class="thick"style="color:white;"><b>Meal</b></p>
+						</td>
+						<td>
+							<p class="thick"style="color:white;"><b>Suggestions</b></p>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<p class="thick"style="color:white;"><b>Breakfast</b></p>
+						</td>
+						<td class="thick"style="color:white;" id="bfmeal">
+							
+						</td>
+
+					</tr>
+					
+					<tr>
+						<td>
+							<p class="thick"style="color:white;"><b>Lunch</b></p>
+						</td>
+						<td style="color:white;" id="lunchmeal">
+							
+						</td>
+
+					</tr>
+					
+					<tr>
+						<td>
+							<p class="thick"style="color:white;"><b>Dinner</b></p>
+						</td>
+						<td style="color:white;" id="dinnermeal">
+							
+						</td>
+
+					</tr>
+					
+					<tr>
+						<td>
+							<p class="thick"style="color:white;"><b>Snack</b></p>
+						</td>
+						<td style="color:white;" id="snackmeal">
+							
+						</td>
+
+					</tr>
+					
+				</table>
+              </div>              
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <h3>Easily Accesible</h3>
+            <p class="lead mb-0">You will be able to use this website no matter what device you're on!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Convenient</h3>
+            <p class="lead mb-0">Gives an instant plan to help you start to lose weight and helps keep track of your progess!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"></i>
+            </div>
+            <h3>Easy to Use</h3>
+            <p class="lead mb-0">Extremely simple to follow!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Showcases -->
+  
+  <!-- Call to Action -->
+  <section class="call-to-action text-white text-center">
+  </section>
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="control.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
