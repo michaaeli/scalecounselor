@@ -53,8 +53,22 @@ function showInput(){
 }
 
 function showInput2(){
-  document.getElementById("showUpBlock2").style.display = "initial";
+  var username = $('#roundedcorners2').val();
+  var goal_days =
+  var goal_pounds = 
+  
+  $.ajax({
+    url: "https://SmartScale99.moe-chael.repl.co/postplan/" + username + "/" + goal_days + "/" + goal_pounds,
+    success: function(result) {
+      console.log(result);
+	    
 
+      document.getElementById("showUpBlock2").style.display = "initial";
+    },
+      error: function(result) {
+          console.log("error");
+      }
+  });
 }
 
 function showInput3(){
